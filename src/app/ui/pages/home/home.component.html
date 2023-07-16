@@ -1,0 +1,14 @@
+<div *ngFor="let page of Pages" [attr.id]="page.section_name">
+    <section *ngIf="page.section_name == 'home'">
+        <app-home-hero> </app-home-hero>
+    </section>
+    <section *ngIf="page.section_name == 'resume'" [attr.id]="page.section_name">
+        <app-resume></app-resume>
+    </section>
+    <section *ngIf="page.section_name == 'about'" [attr.id]="page.section_name">
+        <div class="h-screen bg-red-500 w-screen"></div>
+    </section>
+    <section *ngIf="page.section_name == 'contact'" [attr.id]="page.section_name">
+        <div class="h-screen bg-blue-500 w-screen"></div>
+    </section>
+</div>

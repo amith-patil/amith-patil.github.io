@@ -1,0 +1,16 @@
+<div class=" bg-[url('./app/images/hero_bg.jpg')] bg-fixed flex flex-col max-h-screen h-screen bg-cover">
+    <app-nav-bar class="mx-auto container "></app-nav-bar>
+    <div class="div flex flex-col lg:flex-row lg:backdrop-blur-sm lg:bg-black/30">
+        <app-socials class="hidden lg:flex lg:px-12"></app-socials>
+        <app-hero-section class="w-full"></app-hero-section>
+        <app-socials class="flex px-12 lg:hidden flex-col items-center"></app-socials>
+    </div>
+    <div class="absolute bottom-0 flex flex-col w-screen items-center">
+        <ul class="text-3xl hidden lg:flex">
+            <li
+                class="text-white p-4 items-center justify-around animate-bounce animate-infinite animate-duration-[2000ms] animate-delay-300 animate-ease-out">
+                <a href="#resume"><i class="fa-solid fa-circle-chevron-down"></i></a>
+            </li>
+        </ul>
+    </div>
+</div>
