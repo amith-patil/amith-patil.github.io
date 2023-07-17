@@ -8,20 +8,21 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { LogoComponent } from '../../logos/logo/logo.component';
 import { MatButtonModule } from '@angular/material/button';
-import { NavBarComponent } from '../../components/nav-bar/nav-bar.component';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
 import { SocialsComponent } from '../../components/socials/socials.component';
 import { ResumeComponent } from '../resume/resume.component';
+import { NavBarComponent } from '../../components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     HomeHeroComponent,
     LogoComponent,
-    NavBarComponent,
     HeroSectionComponent,
     SocialsComponent,
     ResumeComponent,
+    NavBarComponent,
+    LogoComponent,
   ],
   imports: [
     CommonModule,
