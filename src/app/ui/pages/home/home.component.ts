@@ -18,10 +18,10 @@ export const pages = [
     section_name: 'home',
   },
   {
-    section_name: 'resume',
+    section_name: 'about',
   },
   {
-    section_name: 'about',
+    section_name: 'career',
   },
   {
     section_name: 'contact',

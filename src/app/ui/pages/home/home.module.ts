@@ -10,8 +10,9 @@ import { LogoComponent } from '../../logos/logo/logo.component';
 import { MatButtonModule } from '@angular/material/button';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
 import { SocialsComponent } from '../../components/socials/socials.component';
-import { ResumeComponent } from '../resume/resume.component';
 import { NavBarComponent } from '../../components/nav-bar/nav-bar.component';
+import { HomeAboutComponent } from './home-about/home-about.component';
+import { HomeCareerComponent } from './home-career/home-career.component';
 
 @NgModule({
   declarations: [
@@ -20,9 +21,10 @@ import { NavBarComponent } from '../../components/nav-bar/nav-bar.component';
     LogoComponent,
     HeroSectionComponent,
     SocialsComponent,
-    ResumeComponent,
     NavBarComponent,
     LogoComponent,
+    HomeAboutComponent,
+    HomeCareerComponent,
   ],
   imports: [
     CommonModule,
