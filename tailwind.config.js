@@ -15,6 +15,7 @@ module.exports = {
       },
       fontSize: {
         title: "192px",
+        bg: "300px",
       },
       animation: {
         text: "text 10s linear infinite",

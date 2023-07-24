@@ -1,13 +1,13 @@
 <div class="flex xl:flex-row flex-col xl:mx-40 items-center justify-around">
     <div class="flex flex-col bg-slate-900">
         <h1
-            class="text-gray-100 font-inter xl:text-9xl bg-slate-800 text-5xl my-12 py-12 xl:px-40 font-bold animate-fade-up animate-delay-100 text-center xl:text-left">
+            class="text-gray-100 font-inter xl:text-9xl bg-slate-800 text-5xl mb-12 xl:py-32 py-12 xl:px-40 font-bold animate-fade-up animate-delay-100 text-center xl:text-left">
             Career.</h1>
         <div
-            class="flex flex-wrap items-center xl:justify-center justify-around xl:space-x-28 xl:px-40 px-12 pt-12 xl:py-12">
+            class="flex flex-wrap items-center xl:justify-center justify-around xl:space-x-28 xl:px-40 px-12 pt-12 xl:py-12 xl:bg-slate-950 shadow-2xl rounded-md xl:mx-40 xl:-translate-y-32">
             <ng-container *ngFor="let work of _mWorks">
                 <a [href]="work.link" target="_blank" class="skill">
-                    <div class="flex flex-row items-center gap-4">
+                    <div class="flex flex-row items-center gap-4 xl:hover:scale-110 xl:transition xl:ease-in-out">
                         <img class=" h-5 xl:h-16 grayscale" [src]="work.logo" alt="">
                     </div>
                 </a>
@@ -150,9 +150,10 @@
             <div class="flex flex-wrap gap-4 py-12">
                 <ng-container *ngFor="let skill of _mSkills">
                     <a [href]="skill.link" target="_blank" class="skill">
-                        <div class="flex flex-row bg-white p-4 rounded-md items-center gap-4 justify-around">
+                        <div
+                            class="flex flex-row bg-slate-950 p-4 rounded-md items-center xl:hover:scale-110 xl:transition xl:ease-in-out gap-4 justify-around shadow-xl">
                             <img class=" h-5 xl:h-10" [src]="skill.logo" alt="">
-                            <h3 class="text-sm xl:text-2xl text-gray-500 font-inter font-bold">{{skill.name}}</h3>
+                            <h3 class="text-sm xl:text-2xl text-gray-300 font-inter font-medium">{{skill.name}}</h3>
                         </div>
                     </a>
                 </ng-container>
