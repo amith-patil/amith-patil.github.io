@@ -1,8 +1,18 @@
-<div class="flex xl:flex-row flex-col  p-12 xl:mx-40 items-center justify-around">
-    <div class="flex flex-col">
+<div class="flex xl:flex-row flex-col xl:mx-40 items-center justify-around">
+    <div class="flex flex-col bg-slate-900">
         <h1
-            class="text-gray-300 font-inter xl:text-9xl  text-5xl mt-12 xl:px-40 font-bold animate-fade-up animate-delay-100 text-center xl:text-left">
-            Career</h1>
+            class="text-gray-100 font-inter xl:text-9xl bg-slate-800 text-5xl my-12 py-12 xl:px-40 font-bold animate-fade-up animate-delay-100 text-center xl:text-left">
+            Career.</h1>
+        <div
+            class="flex flex-wrap items-center xl:justify-center justify-around xl:space-x-28 xl:px-40 px-12 pt-12 xl:py-12">
+            <ng-container *ngFor="let work of _mWorks">
+                <a [href]="work.link" target="_blank" class="skill">
+                    <div class="flex flex-row items-center gap-4">
+                        <img class=" h-5 xl:h-16 grayscale" [src]="work.logo" alt="">
+                    </div>
+                </a>
+            </ng-container>
+        </div>
         <section class="relative w-screen flex flex-col xl:flex-row justify-between">
             <div class="flex flex-col p-12 items-center xl:items-stretch ">
 
@@ -133,77 +143,19 @@
             </div>
         </section>
         <!-- TODO : Make this programmatic and responsive -->
-        <div class="bg-cyan-800 py-12">
+        <div class="bg-slate-800 p-12 xl:px-40">
             <h1
-                class="text-gray-300 font-inter xl:text-9xl  text-5xl my-12 xl:px-40 font-bold animate-fade-up animate-delay-100 text-center xl:text-right">
-                skills</h1>
-            <div class="hidden xl:grid xl:grid-cols-6 gap-4 mx-40">
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg p-4">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/typescript_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">typescript</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg p-4 ">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/javascript_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">Javascript</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg p-4 ">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/html_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">HTML</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg p-4 ">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/css_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">CSS</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg p-4 ">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/angular_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">Angular</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg p-4 ">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/Bash_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">Bash</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg p-4">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/python_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">Python</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg p-4 ">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/go_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">Go</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg p-4 ">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/tailwind_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">Tailwind</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg col-span-2 p-4 ">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/google_cloud_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">Google Cloud</h1>
-                </div>
-                <div class="flex flex-row items-center justify-between bg-white space-x-8 rounded-lg p-4 ">
-                    <div class="h-10 w-10">
-                        <img src="assets/img/figma_logo.png" alt="">
-                    </div>
-                    <h1 class="text-gray-500 font-inter text-2xl font-bold">Figma</h1>
-                </div>
+                class="text-gray-100 font-inter xl:text-9xl  text-5xl font-bold animate-fade-up animate-delay-100 text-center xl:text-right">
+                Skills.</h1>
+            <div class="flex flex-wrap gap-4 py-12">
+                <ng-container *ngFor="let skill of _mSkills">
+                    <a [href]="skill.link" target="_blank" class="skill">
+                        <div class="flex flex-row bg-white p-4 rounded-md items-center gap-4 justify-around">
+                            <img class=" h-5 xl:h-10" [src]="skill.logo" alt="">
+                            <h3 class="text-sm xl:text-2xl text-gray-500 font-inter font-bold">{{skill.name}}</h3>
+                        </div>
+                    </a>
+                </ng-container>
             </div>
         </div>
     </div>
