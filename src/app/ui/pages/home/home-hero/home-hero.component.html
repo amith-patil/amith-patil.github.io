@@ -1,9 +1,7 @@
-<video autoplay muted preload="auto" loop src="assets/img/bg-video.mp4" type="video/mp4"
-    class="fixed h-screen w-screen brightness-50 object-cover -z-10"></video>
-<div class=" flex flex-col max-h-screen h-screen select-none">
+<div class=" flex flex-col max-h-screen h-screen select-none bg-[url('./app/images/bg.png')] bg-fixed bg-cover">
     <!-- TODO: make navbar responsive and sticky -->
     <app-nav-bar></app-nav-bar>
-    <div class="h-screen xl:h-fit justify-between xl:mx-40 flex flex-col lg:flex-row  mx-12 py-12">
+    <div class="h-full xl:h-fit justify-between xl:mx-40 flex flex-col lg:flex-row  mx-12 py-12">
         <app-hero-section class="xl:my-12 xl:w-full"></app-hero-section>
         <app-socials class="lg:flex  items-center"></app-socials>
     </div>
