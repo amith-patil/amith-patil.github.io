@@ -8,11 +8,18 @@ import { Component } from '@angular/core';
 export class HomeCareerComponent {
   _mProfSkills = [
     {
-      title: 'Protocols',
+      title: 'PROTOCOLS',
       skills:
         'HTTP, SMTP,\
       SNMP, Restful APIs, ICAP, SSL,\
       TLS, TCP/IP, UDP.',
+    },
+    {
+      title: 'MANAGEMENT',
+      skills:
+        'Team player,\
+      backlog management, holistic\
+      approaches, results driven.',
     },
     {
       title: 'RESEARCH',
@@ -33,13 +40,6 @@ export class HomeCareerComponent {
       Wireshark, Ktrace, Truss, iperf,\
       Linux troubleshooting/\
       administration.',
-    },
-    {
-      title: 'MANAGEMENT',
-      skills:
-        'Team player,\
-      backlog management, holistic\
-      approaches, results driven.',
     },
   ];
   _mExperience = [
@@ -114,16 +114,6 @@ export class HomeCareerComponent {
     {
       logo: 'assets/img/google_logo.png',
       name: 'Google',
-      link: 'https://www.dell.com',
-    },
-    {
-      logo: 'assets/img/google_cloud_logo.png',
-      name: 'Google Cloud',
-      link: 'https://www.dell.com',
-    },
-    {
-      logo: 'assets/img/chronicle_logo.png',
-      name: 'Chronicle Security',
       link: 'https://www.dell.com',
     },
   ];

@@ -13,6 +13,8 @@ import { SocialsComponent } from '../../components/socials/socials.component';
 import { NavBarComponent } from '../../components/nav-bar/nav-bar.component';
 import { HomeAboutComponent } from './home-about/home-about.component';
 import { HomeCareerComponent } from './home-career/home-career.component';
+import { FooterComponent } from '../../components/footer/footer.component';
+import { HomeContactComponent } from './home-contact/home-contact.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { HomeCareerComponent } from './home-career/home-career.component';
     LogoComponent,
     HomeAboutComponent,
     HomeCareerComponent,
+    FooterComponent,
+    HomeContactComponent,
   ],
   imports: [
     CommonModule,

@@ -1,4 +1,4 @@
-<div *ngFor="let page of Pages" [attr.id]="page.section_name" class="bg-slate-800">
+<div *ngFor="let page of Pages" [attr.id]="page.section_name">
     <section *ngIf="page.section_name == 'home'">
         <app-home-hero> </app-home-hero>
     </section>
@@ -12,6 +12,7 @@
         <app-home-career></app-home-career>
     </section>
     <section *ngIf="page.section_name == 'contact'" [attr.id]="page.section_name">
-        <div class="h-screen w-screen"></div>
+        <app-home-contact></app-home-contact>
     </section>
 </div>
+<app-footer></app-footer>
