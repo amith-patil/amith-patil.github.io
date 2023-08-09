@@ -44,18 +44,24 @@ export class HomeCareerComponent {
   ];
   _mExperience = [
     {
-      title: 'Technical Support Engineer I',
-      company_logo: 'assets/img/Dell_EMC_logo.png',
-      years: '2016-2018',
+      title: 'Solutions Engineer',
+      company_logo: 'assets/img/google_logo.png',
+      years: '2021-Present',
       points: [
         {
-          text: 'Assisting customers with high severity cases like data unavailability and access issues.',
+          text: 'Level 2 engineer for the EMEA region for the administration related skills (Upgrades, HTTP, ICAP, SMTP, SNMP, Restful APIs, InsightIQ) with my secondary skill being Networking',
         },
         {
-          text: 'working with Field engineers remotely during on-site troubleshooting',
+          text: 'Working on escalations from L1 TSE and opening Jira Tickets with In-Market Engineering.',
         },
         {
-          text: 'Cluster networking, setting up DNS records and Isilon SmartConnect configurations, Microsoft Active Directory Management.',
+          text: 'Writing KB articles based on new bugs/issues found in the field (currently published 11 KB articles on the Dell Support site.)',
+        },
+        {
+          text: 'Providing inter departmental training programs to Legacy Dell Employees, along with new hires to the team.',
+        },
+        {
+          text: 'Lead a mentorship program to rapidly develop skills of new hires and global team mates.',
         },
       ],
     },
@@ -82,24 +88,18 @@ export class HomeCareerComponent {
       ],
     },
     {
-      title: 'Solutions Engineer',
-      company_logo: 'assets/img/google_logo.png',
-      years: '2021-Present',
+      title: 'Technical Support Engineer I',
+      company_logo: 'assets/img/Dell_EMC_logo.png',
+      years: '2016-2018',
       points: [
         {
-          text: 'Level 2 engineer for the EMEA region for the administration related skills (Upgrades, HTTP, ICAP, SMTP, SNMP, Restful APIs, InsightIQ) with my secondary skill being Networking',
+          text: 'Assisting customers with high severity cases like data unavailability and access issues.',
         },
         {
-          text: 'Working on escalations from L1 TSE and opening Jira Tickets with In-Market Engineering.',
+          text: 'working with Field engineers remotely during on-site troubleshooting',
         },
         {
-          text: 'Writing KB articles based on new bugs/issues found in the field (currently published 11 KB articles on the Dell Support site.)',
-        },
-        {
-          text: 'Providing inter departmental training programs to Legacy Dell Employees, along with new hires to the team.',
-        },
-        {
-          text: 'Lead a mentorship program to rapidly develop skills of new hires and global team mates.',
+          text: 'Cluster networking, setting up DNS records and Isilon SmartConnect configurations, Microsoft Active Directory Management.',
         },
       ],
     },

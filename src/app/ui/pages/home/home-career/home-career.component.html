@@ -1,4 +1,4 @@
-<div class="flex  flex-col items-center justify-around bg-slate-900 ">
+<div class="flex  flex-col items-center justify-around bg-slate-900 select-none">
     <div class="flex flex-col w-full bg-slate-900">
         <h1
             class="text-gray-100 font-inter xl:text-9xl bg-slate-800 text-5xl py-12 xl:px-40 font-bold text-center xl:text-left">
@@ -8,9 +8,9 @@
     <div class="flex flex-col items-center xl:justify-between bg-slate-900 ">
         <ng-container *ngFor="let experience of _mExperience">
             <div
-                class="flex flex-col xl:flex-row justify-between xl:w-1/2 bg-slate-950 p-10 my-12 xl:space-x-10 xl:rounded-md shadow-2xl">
+                class="flex flex-col xl:flex-row justify-between xl:w-1/2 bg-slate-950 p-10 my-12 xl:space-x-10 xl:rounded-lg shadow-lg">
                 <div class="flex flex-col basis-1/3 items-center ">
-                    <div class="container bg-slate-950 rounded-md p-12">
+                    <div class="container bg-slate-950 rounded-lg p-12">
                         <img [src]=" experience.company_logo" alt="">
                     </div>
                     <h3 class="text-gray-500 text-xl font-inter font-bold">{{experience.years}}</h3>
@@ -28,7 +28,7 @@
 
 
     <div class="bg-slate-900">
-        <div class="flex flex-row items-baseline xl:mx-40 p-12">
+        <div class="flex flex-row items-baseline xl:mx-40 py-12">
             <h1
                 class="text-gray-100 font-inter xl:text-6xl text-4xl font-bold animate-fade-up animate-delay-100 text-center xl:text-left">
                 Skills.</h1>
