@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  loader = true;
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.loader = false;
+    }, 3900);
+  }
 }
