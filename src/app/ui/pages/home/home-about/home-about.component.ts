@@ -28,14 +28,21 @@ export class HomeAboutComponent implements OnInit {
   title = false;
   image = false;
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (window.screen.width < 1280) {
+      this.title = true;
+      this.image = true;
+    }
+  }
 
   @HostListener('window:scroll', ['$event']) getScrollHeight(event: any) {
-    if (window.scrollY > 400) {
-      this.title = true;
-    } else this.title = false;
-    if (window.scrollY > 600) {
-      this.image = true;
-    } else this.image = false;
+    if (window.screen.width > 1280) {
+      if (window.scrollY > 400) {
+        this.title = true;
+      } else this.title = false;
+      if (window.scrollY > 600) {
+        this.image = true;
+      } else this.image = false;
+    }
   }
 }
