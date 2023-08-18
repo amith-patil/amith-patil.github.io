@@ -14,7 +14,7 @@ export class SplashscreenComponent {
     });
 
     anim.add({
-      targets: '#hexagon path',
+      targets: '#logo path',
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutQuart',
       duration: 2000,

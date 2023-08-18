@@ -1,3 +1,12 @@
+<a href="#home" [@inOutAnimation] class="hidden lg:flex" *ngIf="offsetFlag">
+    <div class=" fixed flex bottom-0 right-0 w-12 h-12 bg-slate-600 items-center justify-center rounded-br-2xl  m-12">
+        <ul class="text-2xl ">
+            <li class="text-gray-300 p-4 items-center justify-around">
+                <i class="fa-solid fa-arrow-up"></i>
+            </li>
+        </ul>
+    </div>
+</a>
 <div *ngFor="let page of Pages" [attr.id]="page.section_name" class="bg-slate-800">
     <section *ngIf="page.section_name == 'home'">
         <app-home-hero> </app-home-hero>

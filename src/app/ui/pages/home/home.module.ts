@@ -7,7 +7,6 @@ import { HomeHeroComponent } from './home-hero/home-hero.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { LogoComponent } from '../../logos/logo/logo.component';
-import { MatButtonModule } from '@angular/material/button';
 import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
 import { SocialsComponent } from '../../components/socials/socials.component';
 import { NavBarComponent } from '../../components/nav-bar/nav-bar.component';
@@ -36,7 +35,6 @@ import { HomeContactComponent } from './home-contact/home-contact.component';
     RouterModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule,
   ],
 })
 export class HomeModule {}
