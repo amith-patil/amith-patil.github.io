@@ -37,7 +37,7 @@ export class HomeAboutComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event']) getScrollHeight(event: any) {
     if (window.screen.width > 1280) {
-      if (window.scrollY > 400) {
+      if (window.scrollY > 300) {
         this.title = true;
       } else this.title = false;
       if (window.scrollY > 600) {

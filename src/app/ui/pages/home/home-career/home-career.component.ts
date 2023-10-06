@@ -104,19 +104,6 @@ export class HomeCareerComponent {
       ],
     },
   ];
-  // TODO: Update links
-  _mWorks = [
-    {
-      logo: 'assets/img/Dell_EMC_logo.png',
-      name: 'Dell EMC',
-      link: 'https://www.dell.com',
-    },
-    {
-      logo: 'assets/img/google_logo.png',
-      name: 'Google',
-      link: 'https://www.dell.com',
-    },
-  ];
 
   _mSkills = [
     {
@@ -127,47 +114,52 @@ export class HomeCareerComponent {
     {
       logo: 'assets/img/angular_logo.png',
       name: 'Angular',
-      link: 'https://www.typescriptlang.org/',
+      link: 'https://angular.io/',
     },
     {
       logo: 'assets/img/css_logo.png',
       name: 'CSS',
-      link: 'https://www.typescriptlang.org/',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     },
     {
       logo: 'assets/img/html_logo.png',
       name: 'HTML',
-      link: 'https://www.typescriptlang.org/',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     },
     {
       logo: 'assets/img/figma_logo.png',
       name: 'Figma',
-      link: 'https://www.typescriptlang.org/',
+      link: 'https://www.figma.com/',
     },
     {
       logo: 'assets/img/tailwind_logo.png',
       name: 'Tailwind',
-      link: 'https://www.typescriptlang.org/',
+      link: 'https://www.tailwindcss.com/',
     },
     {
       logo: 'assets/img/Bash_logo.png',
       name: 'Bash',
-      link: 'https://www.typescriptlang.org/',
+      link: 'https://www.gnu.org/',
     },
     {
       logo: 'assets/img/python_logo.png',
       name: 'Python',
-      link: 'https://www.typescriptlang.org/',
+      link: 'https://www.python.org/',
     },
     {
       logo: 'assets/img/go_logo.png',
       name: 'Go',
-      link: 'https://www.typescriptlang.org/',
+      link: 'https://go.dev/',
     },
     {
       logo: 'assets/img/google_cloud_logo.png',
       name: 'Google Cloud',
-      link: 'https://www.typescriptlang.org/',
+      link: 'https://cloud.google.com/',
+    },
+    {
+      logo: 'assets/img/chronicle_logo.png',
+      name: 'Chronicle',
+      link: 'https://chronicle.security',
     },
   ];
 }
