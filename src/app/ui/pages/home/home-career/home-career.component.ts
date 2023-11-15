@@ -1,4 +1,20 @@
-import { Component } from '@angular/core';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger,
+} from '@angular/animations';
+
+import {
+  Component,
+  ElementRef,
+  OnInit,
+  HostListener,
+  HostBinding,
+  SimpleChanges,
+  Input,
+} from '@angular/core';
 
 @Component({
   selector: 'app-home-career',
@@ -6,6 +22,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home-career.component.scss'],
 })
 export class HomeCareerComponent {
+  isExpanded: boolean[] = [];
+
+  expand(i: number) {
+    this.isExpanded[i] = !this.isExpanded[i];
+  }
+
   _mProfSkills = [
     {
       title: 'PROTOCOLS',
