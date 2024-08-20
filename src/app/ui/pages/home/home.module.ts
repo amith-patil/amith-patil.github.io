@@ -14,7 +14,6 @@ import { HomeAboutComponent } from './home-about/home-about.component';
 import { HomeCareerComponent } from './home-career/home-career.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { HomeContactComponent } from './home-contact/home-contact.component';
-import { CardComponent } from '../../components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,6 @@ import { CardComponent } from '../../components/card/card.component';
     HomeCareerComponent,
     FooterComponent,
     HomeContactComponent,
-    CardComponent,
   ],
   imports: [
     CommonModule,
