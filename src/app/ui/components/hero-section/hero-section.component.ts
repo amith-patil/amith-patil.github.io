@@ -1,6 +1,8 @@
+import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
 import {
   Component,
   ElementRef,
+  HostListener,
   Input,
   Renderer2,
   ViewChild,

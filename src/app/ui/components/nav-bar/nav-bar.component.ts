@@ -22,7 +22,6 @@ export class NavBarComponent {
     if (window.scrollY > 200) {
       this.offsetFlag = false;
     } else this.offsetFlag = true;
-    console.log(this.offsetFlag)
   }
 
   @HostListener('mouseenter') onMouseEnter() {
