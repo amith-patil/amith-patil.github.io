@@ -1,5 +1,5 @@
 <div *ngFor="let page of Pages" [attr.id]="page.section_name"
-    class="transition ease-in-out duration-300 dark:bg-gradient-to-bl dark:from-slate-900  dark:to-slate-800  bg-gradient-to-bl from-slate-400 to-slate-100">
+    class="transition ease-in-out duration-300 dark:bg-gradient-to-bl dark:from-slate-900  dark:to-slate-800  bg-gradient-to-bl from-slate-400 to-slate-100 mx-auto items-center">
     <section *ngIf="page.section_name == 'home'">
         <app-home-hero> </app-home-hero>
     </section>
