@@ -1,5 +1,5 @@
 <div
-    class="flex lg:flex-row flex-col lg:h-screen p-12 lg:px-40 items-center bg-cover bg-slate-200 dark:bg-slate-900 justify-around select-none ">
+    class="flex lg:flex-row flex-col lg:h-screen p-12 lg:px-40 items-center bg-cover bg-slate-200 dark:bg-slate-900 justify-evenly select-none ">
     <div class="flex basis-1/2 flex-col " >
         <h1
             class="text-gray-800 dark:text-gray-100 font-inter lg:text-9xl  text-5xl my-12 font-bold text-center lg:text-left" *ngIf="title" [@slideInOut]>
@@ -8,7 +8,7 @@
             <!-- <img src="assets/img/avatar.png" class="rounded-md shadow-lg" alt=""> -->
             <video playsInline autoplay preload="auto" loop [muted]="'muted'" src="assets/img/avatar.webm" type="video/webm" class="rounded-md shadow-xl">Your browser does not support HTML5 videos</video>
         </div>
-        <p class="flex  lg:text-lg text-gray-600 dark:text-gray-400 font-inter text-1xl font-medium text-center lg:max-w-5xl lg:text-left"
+        <p class="flex basis-1/3 lg:text-lg text-gray-600 dark:text-gray-400 font-inter text-1xl font-medium text-center lg:max-w-5xl lg:text-left"
             *ngIf="title" [@slideInOut]>
             Back in 2010, I got my first computer and was immediately mesmerized by the technology. This evolved into me
             exploring the realm of Computers where I taught myself to build, troubleshoot and code. 
